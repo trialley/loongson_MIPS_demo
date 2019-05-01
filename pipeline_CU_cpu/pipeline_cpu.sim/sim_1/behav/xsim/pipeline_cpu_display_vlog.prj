@@ -1,0 +1,19 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../adder.v" \
+"../../../../../alu.v" \
+"../../../../../decode.v" \
+"../../../../../exe.v" \
+"../../../../../fetch.v" \
+"../../../../../mem.v" \
+"../../../../../multiply.v" \
+"../../../../../pipeline_cpu.v" \
+"../../../../../regfile.v" \
+"../../../../../wb.v" \
+"../../../../../pipeline_cpu_display.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

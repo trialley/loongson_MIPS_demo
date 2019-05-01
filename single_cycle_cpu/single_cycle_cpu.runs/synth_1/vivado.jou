@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Mar  9 14:48:20 2019
+# Process ID: 7476
+# Current directory: D:/Users/TriAlley/Desktop/LS_CPU_LAB/6_single_cycle_cpu/6_single_cycle_cpu/6_single_cycle_cpu.runs/synth_1
+# Command line: vivado.exe -log single_cycle_cpu_display.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source single_cycle_cpu_display.tcl
+# Log file: D:/Users/TriAlley/Desktop/LS_CPU_LAB/6_single_cycle_cpu/6_single_cycle_cpu/6_single_cycle_cpu.runs/synth_1/single_cycle_cpu_display.vds
+# Journal file: D:/Users/TriAlley/Desktop/LS_CPU_LAB/6_single_cycle_cpu/6_single_cycle_cpu/6_single_cycle_cpu.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source single_cycle_cpu_display.tcl -notrace

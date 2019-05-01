@@ -1,0 +1,140 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed May  1 12:59:23 2019
+| Host         : DESKTOP-DNND7R8 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file pipeline_cpu_display_control_sets_placed.rpt
+| Design       : pipeline_cpu_display
+| Device       : xc7a200t
+-------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    67 |
+| Unused register locations in slices containing registers |   104 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            1 |
+|      4 |            3 |
+|      5 |            4 |
+|      6 |            2 |
+|      8 |            2 |
+|      9 |            2 |
+|     10 |            2 |
+|     11 |            1 |
+|     13 |            1 |
+|    16+ |           49 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             150 |           74 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              95 |           43 |
+| Yes          | No                    | No                     |            1670 |          648 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             253 |           81 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------+-------------------------------------------------------+-------------------------------------------------------+------------------+----------------+
+|      Clock Signal      |                     Enable Signal                     |                    Set/Reset Signal                   | Slice Load Count | Bel Load Count |
++------------------------+-------------------------------------------------------+-------------------------------------------------------+------------------+----------------+
+|  lcd_module/clk_2_BUFG |                                                       | lcd_module/lcd_draw_module/draw_block_number1         |                1 |              1 |
+|  lcd_module/clk_2_BUFG | lcd_module/lcd_draw_module/set_xy_valid_reg_n_0       | lcd_module/lcd_draw_module/draw_block_number1         |                2 |              4 |
+|  cpu_clk               |                                                       | cpu/CU_module/ID_valid0                               |                2 |              4 |
+|  clk_IBUF_BUFG         | lcd_module/touch_module/input_value[3]_i_1_n_0        | lcd_module/touch_module/input_value[31]_i_1_n_0       |                2 |              4 |
+|  lcd_module/clk_2_BUFG |                                                       | lcd_module/lcd_draw_module/display_count_y[4]_i_1_n_0 |                2 |              5 |
+|  lcd_module/clk_2_BUFG | lcd_module/lcd_init_module/init_display_begin_reg_n_0 | lcd_module/lcd_init_module/init_display_begin0        |                3 |              5 |
+|  lcd_module/clk_2_BUFG | lcd_module/lcd_init_module/display_x_h[4]_i_1_n_0     | lcd_module/lcd_init_module/init_display_begin0        |                2 |              5 |
+|  lcd_module/clk_2_BUFG | lcd_module/lcd_draw_module/draw_wr_valid0             | lcd_module/lcd_draw_module/draw_data[4]_i_1_n_0       |                2 |              5 |
+|  lcd_module/clk_2_BUFG | lcd_module/lcd_draw_module/draw_block_end             | lcd_module/lcd_draw_module/draw_block_number0         |                2 |              6 |
+|  clk_IBUF_BUFG         |                                                       | lcd_module/touch_module/clk_count0                    |                2 |              6 |
+|  lcd_module/clk_2_BUFG | lcd_module/lcd_draw_module/display_count_x[7]_i_2_n_0 | lcd_module/lcd_draw_module/display_count_x[7]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG         | lcd_module/touch_module/send_byte[0]_i_1_n_0          |                                                       |                3 |              8 |
+|  lcd_module/clk_2_BUFG |                                                       | lcd_module/lcd_draw_module/td_count_y0                |                5 |              9 |
+|  lcd_module/clk_2_BUFG | lcd_module/lcd_draw_module/td_count_x[8]_i_2_n_0      | lcd_module/lcd_draw_module/td_count_x[8]_i_1_n_0      |                4 |              9 |
+|  lcd_module/clk_2_BUFG | lcd_module/lcd_init_module/display_y0                 | lcd_module/lcd_init_module/init_display_begin0        |                6 |             10 |
+|  lcd_module/clk_2_BUFG | lcd_module/lcd_draw_module/draw_wr_valid0             |                                                       |                3 |             10 |
+|  lcd_module/clk_2_BUFG | lcd_module/lcd_init_module/sel                        | lcd_module/lcd_init_module/init_rom_pc0               |                5 |             11 |
+|  cpu_clk               |                                                       |                                                       |                9 |             13 |
+|  lcd_module/clk_2_BUFG |                                                       |                                                       |               10 |             18 |
+|  clk_IBUF_BUFG         |                                                       | lcd_module/touch_module/rst_count0                    |                6 |             22 |
+|  clk_IBUF_BUFG         |                                                       | display_valid0                                        |               11 |             22 |
+|  clk_IBUF_BUFG         |                                                       | lcd_module/touch_module/int_o_en_reg_0                |               14 |             26 |
+|  clk_IBUF_BUFG         | lcd_module/touch_module/input_value[31]_i_2_n_0       | lcd_module/touch_module/input_value[31]_i_1_n_0       |                4 |             28 |
+|  cpu_clk               | cpu/CU_module/next_fetch                              | cpu/IF_module/resetn                                  |               15 |             30 |
+|  cpu_clk               | cpu/CU_module/MEM_WB_bus_r_reg[114][0]                |                                                       |               17 |             32 |
+|  clk_IBUF_BUFG         | lcd_module/touch_module/input_valid_OBUF              | cpu/IF_module/resetn                                  |                6 |             32 |
+|  cpu_clk               | cpu/CU_module/MEM_WB_bus_r_reg[116]_0[0]              |                                                       |               10 |             32 |
+|  cpu_clk               | cpu/CU_module/MEM_WB_bus_r_reg[116]_5[0]              |                                                       |               13 |             32 |
+|  cpu_clk               | cpu/WB_module/epc_r[31]_i_1_n_0                       |                                                       |                8 |             32 |
+|  cpu_clk               | cpu/MEM_WB_bus_r[46]                                  |                                                       |                7 |             32 |
+|  cpu_clk               | cpu/CU_module/multiplier                              | cpu/CU_module/ID_EXE_bus_r_reg[166]                   |               10 |             32 |
+|  cpu_clk               | cpu/MEM_WB_bus_r[47]                                  |                                                       |               15 |             32 |
+|  cpu_clk               | cpu/CU_module/MEM_WB_bus_r_reg[112]_0[0]              |                                                       |               17 |             32 |
+|  cpu_clk               | cpu/CU_module/MEM_WB_bus_r_reg[116]_3[0]              |                                                       |               15 |             32 |
+|  cpu_clk               | cpu/CU_module/MEM_WB_bus_r_reg[113]_0[0]              |                                                       |                7 |             32 |
+|  cpu_clk               | cpu/CU_module/MEM_WB_bus_r_reg[116]_6[0]              |                                                       |                9 |             32 |
+|  cpu_clk               | cpu/CU_module/MEM_WB_bus_r_reg[115]_4[0]              |                                                       |               10 |             32 |
+|  cpu_clk               | cpu/CU_module/MEM_WB_bus_r_reg[116]_12[0]             |                                                       |               15 |             32 |
+|  cpu_clk               | cpu/CU_module/MEM_WB_bus_r_reg[113][0]                |                                                       |               10 |             32 |
+|  cpu_clk               | cpu/CU_module/MEM_WB_bus_r_reg[114]_3[0]              |                                                       |               12 |             32 |
+|  cpu_clk               | cpu/CU_module/MEM_WB_bus_r_reg[115]_2[0]              |                                                       |               18 |             32 |
+|  cpu_clk               | cpu/CU_module/MEM_WB_bus_r_reg[116]_7[0]              |                                                       |               13 |             32 |
+|  cpu_clk               | cpu/CU_module/MEM_WB_bus_r_reg[114]_0[0]              |                                                       |               26 |             32 |
+|  cpu_clk               | cpu/CU_module/MEM_WB_bus_r_reg[115]_3[0]              |                                                       |               10 |             32 |
+|  cpu_clk               | cpu/CU_module/MEM_WB_bus_r_reg[115]_1[0]              |                                                       |               12 |             32 |
+|  cpu_clk               | cpu/CU_module/MEM_WB_bus_r_reg[114]_4[0]              |                                                       |               24 |             32 |
+|  cpu_clk               | cpu/CU_module/MEM_WB_bus_r_reg[116]_4[0]              |                                                       |                9 |             32 |
+|  cpu_clk               | cpu/CU_module/MEM_WB_bus_r_reg[116]_8[0]              |                                                       |               14 |             32 |
+|  cpu_clk               | cpu/CU_module/MEM_WB_bus_r_reg[114]_1[0]              |                                                       |               13 |             32 |
+|  cpu_clk               | cpu/CU_module/MEM_WB_bus_r_reg[112][0]                |                                                       |                9 |             32 |
+|  cpu_clk               | cpu/CU_module/MEM_WB_bus_r_reg[116][0]                |                                                       |               15 |             32 |
+|  cpu_clk               | cpu/CU_module/MEM_WB_bus_r_reg[115]_0[0]              |                                                       |               16 |             32 |
+|  cpu_clk               | cpu/CU_module/MEM_WB_bus_r_reg[116]_2[0]              |                                                       |               14 |             32 |
+|  cpu_clk               | cpu/CU_module/MEM_WB_bus_r_reg[114]_2[0]              |                                                       |               19 |             32 |
+|  cpu_clk               | cpu/CU_module/MEM_WB_bus_r_reg[112]_1[0]              |                                                       |               14 |             32 |
+|  cpu_clk               | cpu/CU_module/MEM_WB_bus_r_reg[116]_10[0]             |                                                       |               18 |             32 |
+|  cpu_clk               | cpu/CU_module/MEM_WB_bus_r_reg[116]_11[0]             |                                                       |               12 |             32 |
+|  cpu_clk               | cpu/CU_module/MEM_WB_bus_r_reg[116]_9[0]              |                                                       |               17 |             32 |
+|  cpu_clk               | cpu/CU_module/MEM_WB_bus_r_reg[115][0]                |                                                       |               16 |             32 |
+|  cpu_clk               | cpu/CU_module/MEM_WB_bus_r_reg[116]_1[0]              |                                                       |               12 |             32 |
+|  cpu_clk               | cpu/CU_module/IFTOID                                  |                                                       |               14 |             64 |
+|  cpu_clk               | cpu/CU_module/multiplier                              |                                                       |               18 |             64 |
+|  cpu_clk               | cpu/EXE_module/multiply_module/mult_valid_reg_0       | cpu/EXE_module/multiply_module/product_temp           |               16 |             64 |
+|  cpu_clk               | cpu/MEM_module/E[0]                                   |                                                       |               44 |            118 |
+|  clk_IBUF_BUFG         |                                                       |                                                       |               55 |            119 |
+|  cpu_clk               | cpu/CU_module/EXE_valid_reg_1[0]                      |                                                       |               57 |            154 |
+|  cpu_clk               | cpu/CU_module/IDTOEX                                  |                                                       |               43 |            164 |
++------------------------+-------------------------------------------------------+-------------------------------------------------------+------------------+----------------+
+
+

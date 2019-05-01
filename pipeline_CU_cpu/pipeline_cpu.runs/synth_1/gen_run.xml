@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a200tfbg676-2" LaunchTime="1556686650">
+  <File Type="PA-TCL" Name="pipeline_cpu_display.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="pipeline_cpu_display_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="pipeline_cpu_display_reports.tcl"/>
+  <File Type="RDS-RDS" Name="pipeline_cpu_display.vds"/>
+  <File Type="RDS-UTIL" Name="pipeline_cpu_display_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="pipeline_cpu_display_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="pipeline_cpu_display.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="pipeline_cpu_display_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="pipeline_cpu_display_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/LS_CPU_LAB/lcd_module.dcp">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../LS_CPU_LAB/lcd_module.dcp"/>
+        <Attr Name="ImportTime" Val="1486695670"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/data_ram.dcp">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../LS_CPU_LAB/8_pipeline_cpu/data_ram.dcp"/>
+        <Attr Name="ImportTime" Val="1487297222"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/inst_rom.dcp">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../LS_CPU_LAB/8_pipeline_cpu/inst_rom.dcp"/>
+        <Attr Name="ImportTime" Val="1487297204"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/adder.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../LS_CPU_LAB/8_pipeline_cpu/adder.v"/>
+        <Attr Name="ImportTime" Val="1486602986"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/alu.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../LS_CPU_LAB/8_pipeline_cpu/alu.v"/>
+        <Attr Name="ImportTime" Val="1486602986"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/cu.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/decode.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../LS_CPU_LAB/8_pipeline_cpu/decode.v"/>
+        <Attr Name="ImportTime" Val="1486602986"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/exe.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../LS_CPU_LAB/8_pipeline_cpu/exe.v"/>
+        <Attr Name="ImportTime" Val="1486602986"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/fetch.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../LS_CPU_LAB/8_pipeline_cpu/fetch.v"/>
+        <Attr Name="ImportTime" Val="1486602986"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/mem.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../LS_CPU_LAB/8_pipeline_cpu/mem.v"/>
+        <Attr Name="ImportTime" Val="1486602986"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/multiply.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../LS_CPU_LAB/8_pipeline_cpu/multiply.v"/>
+        <Attr Name="ImportTime" Val="1486602986"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/pipeline_cpu.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../LS_CPU_LAB/8_pipeline_cpu/pipeline_cpu.v"/>
+        <Attr Name="ImportTime" Val="1486602986"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/regfile.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../LS_CPU_LAB/8_pipeline_cpu/regfile.v"/>
+        <Attr Name="ImportTime" Val="1486602986"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/wb.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../LS_CPU_LAB/8_pipeline_cpu/wb.v"/>
+        <Attr Name="ImportTime" Val="1486602986"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/pipeline_cpu_display.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../LS_CPU_LAB/8_pipeline_cpu/pipeline_cpu_display.v"/>
+        <Attr Name="ImportTime" Val="1486602986"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="pipeline_cpu_display"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/8_pipeline_cpu/pipeline_cpu.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../LS_CPU_LAB/8_pipeline_cpu/pipeline_cpu.xdc"/>
+        <Attr Name="ImportTime" Val="1487296522"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
