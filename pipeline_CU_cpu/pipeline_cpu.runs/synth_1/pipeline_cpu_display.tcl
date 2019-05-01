@@ -17,7 +17,8 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param synth.incrementalSynthesisCache C:/Users/trialley/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-14256-DESKTOP-DNND7R8/incrSyn
+set_param synth.incrementalSynthesisCache C:/Users/trialley/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-5664-DESKTOP-DNND7R8/incrSyn
+set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a200tfbg676-2
@@ -25,31 +26,31 @@ create_project -in_memory -part xc7a200tfbg676-2
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir D:/Users/trialley/Desktop/pipeline_cpu/pipeline_cpu.cache/wt [current_project]
-set_property parent.project_path D:/Users/trialley/Desktop/pipeline_cpu/pipeline_cpu.xpr [current_project]
+set_property webtalk.parent_dir {D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.cache/wt} [current_project]
+set_property parent.project_path {D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo d:/Users/trialley/Desktop/pipeline_cpu/pipeline_cpu.cache/ip [current_project]
+set_property ip_output_repo {d:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-add_files -quiet D:/Users/trialley/Desktop/pipeline_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/lcd_module.dcp
-set_property used_in_implementation false [get_files D:/Users/trialley/Desktop/pipeline_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/lcd_module.dcp]
-add_files -quiet D:/Users/trialley/Desktop/pipeline_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/data_ram.dcp
-set_property used_in_implementation false [get_files D:/Users/trialley/Desktop/pipeline_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/data_ram.dcp]
-add_files -quiet D:/Users/trialley/Desktop/pipeline_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/inst_rom.dcp
-set_property used_in_implementation false [get_files D:/Users/trialley/Desktop/pipeline_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/inst_rom.dcp]
+add_files -quiet {{D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/lcd_module.dcp}}
+set_property used_in_implementation false [get_files {{D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/lcd_module.dcp}}]
+add_files -quiet {{D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/data_ram.dcp}}
+set_property used_in_implementation false [get_files {{D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/data_ram.dcp}}]
+add_files -quiet {{D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/inst_rom.dcp}}
+set_property used_in_implementation false [get_files {{D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/inst_rom.dcp}}]
 read_verilog -library xil_defaultlib {
-  D:/Users/trialley/Desktop/pipeline_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/adder.v
-  D:/Users/trialley/Desktop/pipeline_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/alu.v
-  D:/Users/trialley/Desktop/pipeline_cpu/pipeline_cpu.srcs/sources_1/new/cu.v
-  D:/Users/trialley/Desktop/pipeline_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/decode.v
-  D:/Users/trialley/Desktop/pipeline_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/exe.v
-  D:/Users/trialley/Desktop/pipeline_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/fetch.v
-  D:/Users/trialley/Desktop/pipeline_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/mem.v
-  D:/Users/trialley/Desktop/pipeline_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/multiply.v
-  D:/Users/trialley/Desktop/pipeline_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/pipeline_cpu.v
-  D:/Users/trialley/Desktop/pipeline_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/regfile.v
-  D:/Users/trialley/Desktop/pipeline_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/wb.v
-  D:/Users/trialley/Desktop/pipeline_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/pipeline_cpu_display.v
+  {D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/adder.v}
+  {D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/alu.v}
+  {D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sources_1/new/cu.v}
+  {D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/decode.v}
+  {D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/exe.v}
+  {D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/fetch.v}
+  {D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/mem.v}
+  {D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/multiply.v}
+  {D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/pipeline_cpu.v}
+  {D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/regfile.v}
+  {D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/wb.v}
+  {D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/pipeline_cpu_display.v}
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -59,8 +60,8 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc D:/Users/trialley/Desktop/pipeline_cpu/pipeline_cpu.srcs/constrs_1/imports/8_pipeline_cpu/pipeline_cpu.xdc
-set_property used_in_implementation false [get_files D:/Users/trialley/Desktop/pipeline_cpu/pipeline_cpu.srcs/constrs_1/imports/8_pipeline_cpu/pipeline_cpu.xdc]
+read_xdc {{D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/constrs_1/imports/8_pipeline_cpu/pipeline_cpu.xdc}}
+set_property used_in_implementation false [get_files {{D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/constrs_1/imports/8_pipeline_cpu/pipeline_cpu.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

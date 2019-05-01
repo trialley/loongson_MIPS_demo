@@ -1,9 +1,9 @@
 Vivado Simulator 2018.3
 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto b4007f034697415981440621689bac1f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pipeline_cpu_display_behav xil_defaultlib.pipeline_cpu_display xil_defaultlib.glbl -log elaborate.log 
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto c7037e47638b4a5987b4d3e1dafe5e85 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pipeline_cpu_display_behav xil_defaultlib.pipeline_cpu_display xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-ERROR: [VRFC 10-2063] Module <inst_rom> not found while processing module instance <inst_rom_module> [D:/Users/trialley/Desktop/LS_CPU_LAB/8_pipeline_cpu/pipeline_cpu.v:309]
-ERROR: [VRFC 10-2063] Module <data_ram> not found while processing module instance <data_ram_module> [D:/Users/trialley/Desktop/LS_CPU_LAB/8_pipeline_cpu/pipeline_cpu.v:330]
-ERROR: [VRFC 10-2063] Module <lcd_module> not found while processing module instance <lcd_module> [D:/Users/trialley/Desktop/LS_CPU_LAB/8_pipeline_cpu/pipeline_cpu_display.v:98]
+ERROR: [VRFC 10-2063] Module <inst_rom> not found while processing module instance <inst_rom_module> [D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/pipeline_cpu.v:248]
+ERROR: [VRFC 10-2063] Module <data_ram> not found while processing module instance <data_ram_module> [D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/pipeline_cpu.v:269]
+ERROR: [VRFC 10-2063] Module <lcd_module> not found while processing module instance <lcd_module> [D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/pipeline_cpu_display.v:98]
 ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

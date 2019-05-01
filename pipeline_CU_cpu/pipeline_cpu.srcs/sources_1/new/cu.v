@@ -18,11 +18,12 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
-module cu(//需要包含级输入，级输出，级间输出
+module cu(
+    //包含 来自各流水级的输入线，向各流水级的输出线，各流水级之间寄存器的控制线
     input clk,           // 时钟
     input resetn,        // 复位信号，低电平有效
-
-    //级输入
+    
+    //输入线
     input IF_over,
     input ID_over,
     input EXE_over,
@@ -31,7 +32,7 @@ module cu(//需要包含级输入，级输出，级间输出
     input cancel, 
 
 
-    //级间输出
+    //级间寄存器控制
     output IFTOID,
     output IDTOEX,
     output EXTOMEM,
@@ -39,101 +40,56 @@ module cu(//需要包含级输入，级输出，级间输出
     output MEM_allow_in,
     
     
-    //级输出
-    output next_fetch,
+    //流水级控制线
     //5模块的valid信号
     output reg IF_valid,
     output reg ID_valid,
     output reg EXE_valid,
     output reg MEM_valid,
     output reg WB_valid,
+    output next_fetch,
     
-    
-    output[4:0] cpu_5_valid
+    //向显示模块显示各流水级运行状态
+    output[31:0]cpu_5_valid
     );
 
     
-    
-    
+//-------------------------{5级流水各信号间的逻辑}start--------------------------//
+    //从原来的逻辑中移植过来的，是线路冗余，计划把这些线去掉
+    //当然这些冗余线路也使得某些地方的代码边精简了
     wire IF_allow_in;
     wire ID_allow_in;
     wire EXE_allow_in;
-    //wire MEM_allow_in;
     wire WB_allow_in;
-    
-        
+
     //IF允许进入时，即锁存PC值，取下一条指令
     assign next_fetch = IF_allow_in;
-    //各级允许进入信号:本级无效，或本级执行完成且下级允许进入
+    
+    //各级允许进入信号！准许进入后还要考虑上一级工作是否完成
     assign IF_allow_in  = (IF_over & ID_allow_in) | cancel;
     assign ID_allow_in  = ~ID_valid  | (ID_over  & EXE_allow_in);
     assign EXE_allow_in = ~EXE_valid | (EXE_over & MEM_allow_in);
     assign MEM_allow_in = ~MEM_valid | (MEM_over & WB_allow_in );
     assign WB_allow_in  = ~WB_valid  | WB_over;
+//-------------------------{5级流水各信号间的逻辑}end--------------------------//
    
-    //IF_valid，在复位按下后，一直有效
+//-------------------------{5级流水控制信号}start--------------------------//
    always @(posedge clk)
     begin
-        if (!resetn)
-        begin
-            IF_valid <= 1'b0;
-        end
-        else
-        begin
-            IF_valid <= 1'b1;
-        end
-    end
-    
-    //ID_valid
-    always @(posedge clk)
-    begin
-        if (!resetn || cancel)
-        begin
-            ID_valid <= 1'b0;
-        end
-        else if (ID_allow_in)
-        begin
-            ID_valid <= IF_over;
-        end
-    end
-    
-    //EXE_valid
-    always @(posedge clk)
-    begin
-        if (!resetn || cancel)
-        begin
-            EXE_valid <= 1'b0;
-        end
-        else if (EXE_allow_in)
-        begin
-            EXE_valid <= ID_over;
-        end
-    end
-    
-    //MEM_valid
-    always @(posedge clk)
-    begin
-        if (!resetn || cancel)
-        begin
-            MEM_valid <= 1'b0;
-        end
-        else if (MEM_allow_in)
-        begin
-            MEM_valid <= EXE_over;
-        end
-    end
-    
-    //WB_valid
-    always @(posedge clk)
-    begin
-        if (!resetn || cancel)
-        begin
-            WB_valid <= 1'b0;
-        end
-        else if (WB_allow_in)
-        begin
-            WB_valid <= MEM_over;
-        end
+        if (!resetn) IF_valid <= 1'b0;
+        else IF_valid <= 1'b1;
+
+        if (!resetn || cancel)ID_valid <= 1'b0;
+        else if (ID_allow_in) ID_valid <= IF_over;
+
+        if (!resetn || cancel) EXE_valid <= 1'b0;
+        else if (EXE_allow_in) EXE_valid <= ID_over;
+
+        if (!resetn || cancel) MEM_valid <= 1'b0;
+        else if (MEM_allow_in) MEM_valid <= EXE_over;
+
+        if (!resetn || cancel)WB_valid <= 1'b0;
+        else if (WB_allow_in) WB_valid <= MEM_over;
     end
     
     //展示5级的valid信号
@@ -141,10 +97,11 @@ module cu(//需要包含级输入，级输出，级间输出
                           {4{EXE_valid}},{4{MEM_valid}},{4{WB_valid}}};
 //-------------------------{5级流水控制信号}end--------------------------//
 
-//--------------------------{5级间的总线控制}begin---------------------------//
+//--------------------------{5级间的寄存器控制}begin---------------------------//
+//下一级允许接受，上一级工作完成，则将上一级的输出放行到下一级输入
     assign IFTOID = IF_over && ID_allow_in;
     assign IDTOEX=ID_over && EXE_allow_in;
     assign EXTOMEM=EXE_over && MEM_allow_in;
     assign MEMTOWB=MEM_over && WB_allow_in;
-//---------------------------{5级间的总线}end----------------------------//
+//---------------------------{5级间间的寄存器控制}end----------------------------//
 endmodule

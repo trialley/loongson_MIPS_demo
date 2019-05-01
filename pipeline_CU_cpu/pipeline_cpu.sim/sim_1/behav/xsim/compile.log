@@ -1,0 +1,27 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sources_1/new/cu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decode
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/exe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exe
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/fetch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fetch
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/multiply.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiply
+WARNING: [VRFC 10-3380] identifier 'multiplier' is used before its declaration [D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/multiply.v:19]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/pipeline_cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pipeline_cpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/wb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/pipeline_cpu_display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pipeline_cpu_display
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

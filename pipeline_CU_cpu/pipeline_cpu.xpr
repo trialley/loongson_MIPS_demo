@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="39" Path="D:/Users/trialley/Desktop/pipeline_cpu/pipeline_cpu.xpr">
+<Project Version="7" Minor="39" Path="D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="c7037e47638b4a5987b4d3e1dafe5e85"/>
@@ -31,7 +31,7 @@
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSAVendor" Val="xilinx"/>
     <Option Name="DSANumComputeUnits" Val="60"/>
-    <Option Name="WTXSimLaunchSim" Val="5"/>
+    <Option Name="WTXSimLaunchSim" Val="12"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -56,7 +56,7 @@
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sources_1/imports/LS_CPU_LAB/lcd_module.dcp">
-        <FileInfo>
+        <FileInfo RelPath="lcd_module.dcp">
           <Attr Name="ImportPath" Val="$PPRDIR/../LS_CPU_LAB/lcd_module.dcp"/>
           <Attr Name="ImportTime" Val="1486695670"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -64,7 +64,7 @@
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/data_ram.dcp">
-        <FileInfo>
+        <FileInfo RelPath="data_ram.dcp">
           <Attr Name="ImportPath" Val="$PPRDIR/../LS_CPU_LAB/8_pipeline_cpu/data_ram.dcp"/>
           <Attr Name="ImportTime" Val="1487297222"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -72,7 +72,7 @@
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/inst_rom.dcp">
-        <FileInfo>
+        <FileInfo RelPath="inst_rom.dcp">
           <Attr Name="ImportPath" Val="$PPRDIR/../LS_CPU_LAB/8_pipeline_cpu/inst_rom.dcp"/>
           <Attr Name="ImportTime" Val="1487297204"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -207,6 +207,33 @@
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
       <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sim_1/imports/8_pipeline_cpu/data_ram.dcp">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/data_ram.dcp"/>
+          <Attr Name="ImportTime" Val="1487297222"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/LS_CPU_LAB/lcd_module.dcp">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/LS_CPU_LAB/lcd_module.dcp"/>
+          <Attr Name="ImportTime" Val="1486695670"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/8_pipeline_cpu/inst_rom.dcp">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/inst_rom.dcp"/>
+          <Attr Name="ImportTime" Val="1487297204"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="pipeline_cpu_display"/>
@@ -214,6 +241,7 @@
         <Option Name="TopAutoSet" Val="TRUE"/>
         <Option Name="TransportPathDelay" Val="0"/>
         <Option Name="TransportIntDelay" Val="0"/>
+        <Option Name="SimMode" Val="post-synthesis"/>
         <Option Name="SrcSet" Val="sources_1"/>
       </Config>
     </FileSet>
@@ -252,7 +280,7 @@
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a200tfbg676-2" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true">
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a200tfbg676-2" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
@@ -265,7 +293,6 @@
         <Step Id="post_route_phys_opt_design"/>
         <Step Id="write_bitstream"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>

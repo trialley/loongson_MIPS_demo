@@ -1,16 +1,17 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
-"../../../../../adder.v" \
-"../../../../../alu.v" \
-"../../../../../decode.v" \
-"../../../../../exe.v" \
-"../../../../../fetch.v" \
-"../../../../../mem.v" \
-"../../../../../multiply.v" \
-"../../../../../pipeline_cpu.v" \
-"../../../../../regfile.v" \
-"../../../../../wb.v" \
-"../../../../../pipeline_cpu_display.v" \
+"../../../../pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/adder.v" \
+"../../../../pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/alu.v" \
+"../../../../pipeline_cpu.srcs/sources_1/new/cu.v" \
+"../../../../pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/decode.v" \
+"../../../../pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/exe.v" \
+"../../../../pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/fetch.v" \
+"../../../../pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/mem.v" \
+"../../../../pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/multiply.v" \
+"../../../../pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/pipeline_cpu.v" \
+"../../../../pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/regfile.v" \
+"../../../../pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/wb.v" \
+"../../../../pipeline_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/pipeline_cpu_display.v" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"

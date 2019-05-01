@@ -1,0 +1,75 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto c7037e47638b4a5987b4d3e1dafe5e85 --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot pipeline_cpu_display_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.pipeline_cpu_display xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "pipeline_cpu_display_time_synth.sdf", for root module "pipeline_cpu_display".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "pipeline_cpu_display_time_synth.sdf", for root module "pipeline_cpu_display".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.LUT4
+Compiling module xil_defaultlib.cu
+Compiling module simprims_ver.CARRY4
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module xil_defaultlib.multiply
+Compiling module xil_defaultlib.exe
+Compiling module simprims_ver.MUXF7
+Compiling module simprims_ver.FDSE_default
+Compiling module xil_defaultlib.fetch
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.wb
+Compiling module simprims_ver.GND
+Compiling module simprims_ver.RB36_INTERNAL_VLOG(DOA_REG=1,DOB...
+Compiling module simprims_ver.RAMB36E1(DOA_REG=1,DOB_REG=1,REA...
+Compiling module xil_defaultlib.data_ram_blk_mem_gen_prim_wrappe...
+Compiling module xil_defaultlib.data_ram_blk_mem_gen_prim_width
+Compiling module xil_defaultlib.data_ram_blk_mem_gen_generic_cst...
+Compiling module xil_defaultlib.data_ram_blk_mem_gen_top
+Compiling module xil_defaultlib.data_ram_blk_mem_gen_v8_3_3_synt...
+Compiling module xil_defaultlib.data_ram_blk_mem_gen_v8_3_3
+Compiling module xil_defaultlib.data_ram
+Compiling module simprims_ver.RB18_INTERNAL_VLOG(DOA_REG=1,DOB...
+Compiling module simprims_ver.RAMB18E1(DOA_REG=1,DOB_REG=1,INI...
+Compiling module xil_defaultlib.inst_rom_blk_mem_gen_prim_wrappe...
+Compiling module xil_defaultlib.inst_rom_blk_mem_gen_prim_width
+Compiling module xil_defaultlib.inst_rom_blk_mem_gen_generic_cst...
+Compiling module xil_defaultlib.inst_rom_blk_mem_gen_top
+Compiling module xil_defaultlib.inst_rom_blk_mem_gen_v8_3_3_synt...
+Compiling module xil_defaultlib.inst_rom_blk_mem_gen_v8_3_3
+Compiling module xil_defaultlib.inst_rom
+Compiling module simprims_ver.MUXF8
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.pipeline_cpu
+Compiling module simprims_ver.BUFGCTRL(PRESELECT_I0="TRUE")
+Compiling module simprims_ver.OBUF
+Compiling module xil_defaultlib.lcd_draw
+Compiling module xil_defaultlib.lcd_init
+Compiling module simprims_ver.RB36_INTERNAL_VLOG(DOA_REG=1,RDA...
+Compiling module simprims_ver.RAMB36E1(DOA_REG=1,INIT_00=256'b...
+Compiling module xil_defaultlib.blk_mem_gen_prim_wrapper_init
+Compiling module xil_defaultlib.blk_mem_gen_prim_width
+Compiling module xil_defaultlib.blk_mem_gen_generic_cstr
+Compiling module xil_defaultlib.blk_mem_gen_top
+Compiling module xil_defaultlib.blk_mem_gen_v8_2_synth
+Compiling module xil_defaultlib.blk_mem_gen_v8_2
+Compiling module xil_defaultlib.lcd_rom
+Compiling module simprims_ver.OBUFT
+Compiling module xil_defaultlib.IOBUF_UNIQ_BASE_
+Compiling module xil_defaultlib.IOBUF_HD1
+Compiling module xil_defaultlib.touch_module
+Compiling module xil_defaultlib.lcd_module
+Compiling module xil_defaultlib.pipeline_cpu_display
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pipeline_cpu_display_time_synth

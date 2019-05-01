@@ -1,0 +1,5 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.sim/sim_1/synth/timing/xsim/pipeline_cpu_display_time_synth.v,1556700728,verilog,,,,IOBUF_HD1;IOBUF_UNIQ_BASE_;blk_mem_gen_generic_cstr;blk_mem_gen_prim_width;blk_mem_gen_prim_wrapper_init;blk_mem_gen_top;blk_mem_gen_v8_2;blk_mem_gen_v8_2_synth;cu;data_ram;data_ram_blk_mem_gen_generic_cstr;data_ram_blk_mem_gen_prim_width;data_ram_blk_mem_gen_prim_wrapper;data_ram_blk_mem_gen_top;data_ram_blk_mem_gen_v8_3_3;data_ram_blk_mem_gen_v8_3_3_synth;exe;fetch;glbl;inst_rom;inst_rom_blk_mem_gen_generic_cstr;inst_rom_blk_mem_gen_prim_width;inst_rom_blk_mem_gen_prim_wrapper_init;inst_rom_blk_mem_gen_top;inst_rom_blk_mem_gen_v8_3_3;inst_rom_blk_mem_gen_v8_3_3_synth;lcd_draw;lcd_init;lcd_module;lcd_rom;mem;multiply;pipeline_cpu;pipeline_cpu_display;regfile;touch_module;wb,,,,,,,,

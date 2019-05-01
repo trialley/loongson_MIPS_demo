@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/Users/trialley/Desktop/pipeline_cpu/pipeline_cpu.runs/synth_1'
+HD_PWD='D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

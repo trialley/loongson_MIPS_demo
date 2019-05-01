@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed May  1 16:49:42 2019
+# Process ID: 2908
+# Current directory: D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.sim/sim_1/synth/func/xsim
+# Command line: wbtcv.exe -mode batch -source D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.sim/sim_1/synth/func/xsim/xsim.dir/pipeline_cpu_display_func_synth/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.sim/sim_1/synth/func/xsim/webtalk.log
+# Journal file: D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.sim/sim_1/synth/func/xsim\webtalk.jou
+#-----------------------------------------------------------
+source D:/Users/TriAlley/Desktop/Loongson -notrace

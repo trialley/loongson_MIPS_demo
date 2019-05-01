@@ -55,7 +55,6 @@ module pipeline_cpu(  // 多周期cpu
     wire   WB_valid;
     
     wire MEM_allow_in;
-    wire cpu_5_valid;
 //-------------------------{cu实例化}begin---------------------------//
     cu CU_module(
        .clk(clk),           // 时钟
@@ -149,7 +148,7 @@ module pipeline_cpu(  // 多周期cpu
 //---------------------------{其他交互信号}end---------------------------//
 
 //-------------------------{各模块实例化}begin---------------------------//
-    wire next_fetch; //即将运行取指模块，需要先锁存PC值
+   // wire next_fetch; //即将运行取指模块，需要先锁存PC值
 
     fetch IF_module(             // 取指级
         .clk       (clk       ),  // I, 1

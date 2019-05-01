@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Wed May  1 12:58:23 2019
+| Date         : Wed May  1 16:13:05 2019
 | Host         : DESKTOP-DNND7R8 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file pipeline_cpu_display_utilization_synth.rpt -pb pipeline_cpu_display_utilization_synth.pb
 | Design       : pipeline_cpu_display
@@ -30,13 +30,13 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             | 2248 |     0 |    134600 |  1.67 |
-|   LUT as Logic          | 2248 |     0 |    134600 |  1.67 |
+| Slice LUTs*             | 2267 |     0 |    134600 |  1.68 |
+|   LUT as Logic          | 2267 |     0 |    134600 |  1.68 |
 |   LUT as Memory         |    0 |     0 |     46200 |  0.00 |
 | Slice Registers         | 1886 |     0 |    269200 |  0.70 |
 |   Register as Flip Flop | 1886 |     0 |    269200 |  0.70 |
 |   Register as Latch     |    0 |     0 |    269200 |  0.00 |
-| F7 Muxes                |  319 |     0 |     67300 |  0.47 |
+| F7 Muxes                |  300 |     0 |     67300 |  0.45 |
 | F8 Muxes                |   32 |     0 |     33650 |  0.10 |
 +-------------------------+------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
@@ -150,9 +150,9 @@ Table of Contents
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | FDRE     | 1872 |        Flop & Latch |
-| LUT6     | 1409 |                 LUT |
+| LUT6     | 1428 |                 LUT |
 | LUT5     |  484 |                 LUT |
-| MUXF7    |  319 |               MuxFx |
+| MUXF7    |  300 |               MuxFx |
 | LUT3     |  189 |                 LUT |
 | LUT1     |  131 |                 LUT |
 | LUT4     |   93 |                 LUT |

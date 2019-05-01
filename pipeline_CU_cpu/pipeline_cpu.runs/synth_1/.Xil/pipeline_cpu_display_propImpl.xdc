@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:D:/Users/trialley/Desktop/pipeline_cpu/pipeline_cpu.srcs/constrs_1/imports/8_pipeline_cpu/pipeline_cpu.xdc rfile:../../../../../../trialley/Desktop/pipeline_cpu/pipeline_cpu.srcs/constrs_1/imports/8_pipeline_cpu/pipeline_cpu.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:{D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/constrs_1/imports/8_pipeline_cpu/pipeline_cpu.xdc} rfile:../../../pipeline_cpu.srcs/constrs_1/imports/8_pipeline_cpu/pipeline_cpu.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN AC19 [get_ports clk]
 set_property src_info {type:XDC file:1 line:5 export:INPUT save:INPUT read:READ} [current_design]
