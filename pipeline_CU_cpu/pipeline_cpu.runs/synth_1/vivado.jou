@@ -2,11 +2,11 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Wed May  1 16:12:16 2019
-# Process ID: 13440
-# Current directory: D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.runs/synth_1
-# Command line: vivado.exe -log pipeline_cpu_display.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source pipeline_cpu_display.tcl
-# Log file: D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.runs/synth_1/pipeline_cpu_display.vds
-# Journal file: D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.runs/synth_1\vivado.jou
+# Start of session at: Fri May  3 09:57:33 2019
+# Process ID: 7104
+# Current directory: D:/Users/12037/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.runs/synth_1
+# Command line: vivado.exe -log pipeline_cpu.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source pipeline_cpu.tcl
+# Log file: D:/Users/12037/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.runs/synth_1/pipeline_cpu.vds
+# Journal file: D:/Users/12037/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source pipeline_cpu_display.tcl -notrace
+source pipeline_cpu.tcl -notrace

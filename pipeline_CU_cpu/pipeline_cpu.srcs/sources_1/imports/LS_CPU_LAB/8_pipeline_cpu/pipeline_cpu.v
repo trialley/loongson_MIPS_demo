@@ -55,43 +55,7 @@ module pipeline_cpu(  // 多周期cpu
     wire   WB_valid;
     
     wire MEM_allow_in;
-//-------------------------{cu实例化}begin---------------------------//
-    cu CU_module(
-       .clk(clk),           // 时钟
-    .resetn(resetn),        // 复位信号，低电平有效
 
-    //级输入
-    .IF_over(IF_over),
-    .ID_over(ID_over),
-   .EXE_over(EXE_over),
-   .MEM_over(MEM_over),
-   .WB_over(WB_over),
-   .cancel(cancel), 
-
-
-    //级间输出
-   .IFTOID(IFTOID),
-   .IDTOEX(IDTOEX),
-   .EXTOMEM(EXTOMEM),
-   .MEMTOWB(MEMTOWB),
-.MEM_allow_in(MEM_allow_in),
-    
-    
-    //级输出
-    .next_fetch(next_fetch),
-    //5模块的valid信号
-  .IF_valid(IF_valid),
-   .ID_valid(ID_valid),
-   .EXE_valid(EXE_valid),
-   .MEM_valid(MEM_valid),
-   .WB_valid(WB_valid),
-    
-    
-    .cpu_5_valid(cpu_5_valid)
-    );
-
-
-//-------------------------{cu实例化}end---------------------------//
     wire [ 63:0] IF_ID_bus;   // IF->ID级总线
     wire [166:0] ID_EXE_bus;  // ID->EXE级总线
     wire [153:0] EXE_MEM_bus; // EXE->MEM级总线

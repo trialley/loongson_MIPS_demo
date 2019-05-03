@@ -1,0 +1,6 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/Users/12037/Desktop/Loongson cup/loongson_MIPS_demo/6pipeline_CU_cpu/6pipeline_CU_cpu.sim/sim_1/synth/func/xsim/tb_func_synth.v,1556850379,verilog,,D:/Users/12037/Desktop/Loongson cup/loongson_MIPS_demo/6pipeline_CU_cpu/6pipeline_CU_cpu.srcs/sim_1/new/tb.v,,cu;data_ram;data_ram_blk_mem_gen_generic_cstr;data_ram_blk_mem_gen_prim_width;data_ram_blk_mem_gen_prim_wrapper;data_ram_blk_mem_gen_top;data_ram_blk_mem_gen_v8_3_3;data_ram_blk_mem_gen_v8_3_3_synth;exe;fetch;glbl;inst_rom;inst_rom_blk_mem_gen_generic_cstr;inst_rom_blk_mem_gen_prim_width;inst_rom_blk_mem_gen_prim_wrapper_init;inst_rom_blk_mem_gen_top;inst_rom_blk_mem_gen_v8_3_3;inst_rom_blk_mem_gen_v8_3_3_synth;mem;multiply;pipeline_cpu;regfile;wb,,,,,,,,
+D:/Users/12037/Desktop/Loongson cup/loongson_MIPS_demo/6pipeline_CU_cpu/6pipeline_CU_cpu.srcs/sim_1/new/tb.v,1556845509,verilog,,,,tb,,,,,,,,

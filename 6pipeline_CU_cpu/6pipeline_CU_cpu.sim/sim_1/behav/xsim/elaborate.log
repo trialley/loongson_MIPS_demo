@@ -1,0 +1,8 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 247ceffa317b496f92d3106d2a321d11 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <inst_rom> not found while processing module instance <inst_rom_module> [D:/Users/12037/Desktop/Loongson cup/loongson_MIPS_demo/6pipeline_CU_cpu/6pipeline_CU_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/pipeline_cpu.v:248]
+ERROR: [VRFC 10-2063] Module <data_ram> not found while processing module instance <data_ram_module> [D:/Users/12037/Desktop/Loongson cup/loongson_MIPS_demo/6pipeline_CU_cpu/6pipeline_CU_cpu.srcs/sources_1/imports/LS_CPU_LAB/8_pipeline_cpu/pipeline_cpu.v:269]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

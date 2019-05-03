@@ -1,6 +1,0 @@
-# compile verilog/system verilog design source files
-verilog xil_defaultlib  \
-"pipeline_cpu_display_time_synth.v" \
-
-# Do not sort compile order
-nosort

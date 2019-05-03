@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"testbench_time_impl.v" \
+"../../../../../pipeline_cpu.srcs/sim_1/new/tb.v" \
+
+# Do not sort compile order
+nosort

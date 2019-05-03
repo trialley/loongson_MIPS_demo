@@ -1,7 +1,0 @@
-Running: xsim.dir/pipeline_cpu_display_func_synth/xsimk.exe -simmode gui -wdb pipeline_cpu_display_func_synth.wdb -simrunnum 0 -socket 62046
-Design successfully loaded
-Design Loading Memory Usage: 25220 KB (Peak: 25220 KB)
-Design Loading CPU Usage: 108 ms
-Simulation completed
-Simulation Memory Usage: 29056 KB (Peak: 29056 KB)
-Simulation CPU Usage: 187 ms

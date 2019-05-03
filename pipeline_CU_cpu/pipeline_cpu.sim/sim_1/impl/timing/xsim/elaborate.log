@@ -1,0 +1,20 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto c7037e47638b4a5987b4d3e1dafe5e85 --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot tb_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3180] cannot find port 'LO_data' on this module [D:/Users/12037/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sim_1/new/tb.v:41]
+ERROR: [VRFC 10-3180] cannot find port 'HI_data' on this module [D:/Users/12037/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sim_1/new/tb.v:40]
+ERROR: [VRFC 10-3180] cannot find port 'cpu_5_valid' on this module [D:/Users/12037/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sim_1/new/tb.v:39]
+ERROR: [VRFC 10-3180] cannot find port 'WB_pc' on this module [D:/Users/12037/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sim_1/new/tb.v:38]
+ERROR: [VRFC 10-3180] cannot find port 'MEM_pc' on this module [D:/Users/12037/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sim_1/new/tb.v:37]
+ERROR: [VRFC 10-3180] cannot find port 'EXE_pc' on this module [D:/Users/12037/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sim_1/new/tb.v:36]
+ERROR: [VRFC 10-3180] cannot find port 'ID_pc' on this module [D:/Users/12037/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sim_1/new/tb.v:35]
+ERROR: [VRFC 10-3180] cannot find port 'IF_inst' on this module [D:/Users/12037/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sim_1/new/tb.v:34]
+ERROR: [VRFC 10-3180] cannot find port 'IF_pc' on this module [D:/Users/12037/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sim_1/new/tb.v:33]
+ERROR: [VRFC 10-3180] cannot find port 'mem_data' on this module [D:/Users/12037/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sim_1/new/tb.v:32]
+ERROR: [VRFC 10-3180] cannot find port 'rf_data' on this module [D:/Users/12037/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sim_1/new/tb.v:31]
+ERROR: [VRFC 10-3180] cannot find port 'mem_addr' on this module [D:/Users/12037/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sim_1/new/tb.v:30]
+ERROR: [VRFC 10-3180] cannot find port 'resetn' on this module [D:/Users/12037/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sim_1/new/tb.v:27]
+ERROR: [VRFC 10-3180] cannot find port 'clk' on this module [D:/Users/12037/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sim_1/new/tb.v:26]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

@@ -1,6 +1,6 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.sim/sim_1/synth/timing/xsim/pipeline_cpu_display_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Users/12037/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.sim/sim_1/synth/timing/xsim/tb_time_synth.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module IOBUF_UNIQ_BASE_
-INFO: [VRFC 10-311] analyzing module IOBUF_HD1
+INFO: [VRFC 10-311] analyzing module IOBUF_HD3
 INFO: [VRFC 10-311] analyzing module cu
 INFO: [VRFC 10-311] analyzing module data_ram
 INFO: [VRFC 10-311] analyzing module exe
@@ -36,3 +36,5 @@ INFO: [VRFC 10-311] analyzing module inst_rom_blk_mem_gen_top
 INFO: [VRFC 10-311] analyzing module inst_rom_blk_mem_gen_v8_3_3
 INFO: [VRFC 10-311] analyzing module inst_rom_blk_mem_gen_v8_3_3_synth
 INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Users/12037/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb

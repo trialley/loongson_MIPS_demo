@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/Users/TriAlley/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.runs/synth_1'
+HD_PWD='D:/Users/12037/Desktop/Loongson cup/loongson_MIPS_demo/pipeline_CU_cpu/pipeline_cpu.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log pipeline_cpu_display.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source pipeline_cpu_display.tcl
+EAStep vivado -log pipeline_cpu.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source pipeline_cpu.tcl
